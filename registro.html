@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi Blog</title>
+    <style>
+        /* Estilos para el menú */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #006eff34;
+            text-align: center;
+        }
+    
+        li {
+            display: inline-block;
+        }
+      
+        li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+      
+        li a:hover {
+            background-color: #006ddbab;
+        }
+        
+        /* Estilos para el formulario */
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4c5caf;
+            color: white;
+            cursor: pointer;
+        }
+        body {
+            background-color: #006edb3a;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a04e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <ul>
+        <li><a href="index.html">Bienvenida</a></li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="aboutme.html">Sobre mi</a></li>
+    </ul>
+    
+    <h1>Página 2</h1>
+  
+    <!-- Formulario -->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+        
+        <label for="ocupacion">Ocupación:</label>
+        <input type="text" id="ocupacion" name="ocupacion" required><br>
+        
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select><br>
+        
+        <input type="submit" value="Enviar formulario">
+    </form>
+</body>
+</html>
