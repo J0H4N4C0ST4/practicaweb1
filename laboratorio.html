@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi Blog</title>
+    <!-- scrips -->
+    <script src="js1.js"></script>
+    <script src="js2.js"></script>
+    <script src="js3.js"></script>
+    <script src="js4.js"></script>
+    <script src="ajax.js"></script>
+    <style>
+    /* Estilos para el menú */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #006eff68;
+      text-align: center;
+    }
+    
+    li {
+      display: inline-block;
+    }
+      
+    li a {
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+      
+    li a:hover {
+        background-color: #032dff;
+    }
+
+    #titulo-blog {
+      color: #010000;
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+    }
+    /* Estilos para el menú y la sección de AJAX */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #006eff68;
+        text-align: center;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #032dff;
+        }
+    </style>
+</head>
+<body>
+  <!-- Menú -->
+  <ul>
+    <li><a href="index.html">Bienvenida</a></li>
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="registro.html">Registro</a></li>
+    <li><a href="aboutme.html">Sobre mí</a></li>
+    <li><a href="laboratorio.html">laboratorio</a></li>
+  </ul>
+  <h1 id='titulo-blog'>Ejercicios laboratorio</h1>
+  <ul2>
+    <details>
+        <!-- con # evitamos redirigir a la pagina .js-->
+        <summary>Seccion de JavaScript</summary>
+        <li2><a href="#" onclick="verificarPalindromo()">1. Script</a></li><br> <!-- js1.js -->
+        <li2><a href="#" onclick="compararNumeros()">2. Script</a></li><br> <!-- js2.js -->
+        <li2><a href="#" onclick="obtenerVocales()">3. Script</a></li><br> <!-- js3.js -->
+        <li2><a href="#" onclick="contarVocales()">4. Script</a></li><br> <!-- js4.js -->
+    </details>
+  </ul2>
+  <ul2>
+    <details>
+        <summary>Seccion de AJAX</summary>
+        <div id="ajax-section">
+          <h2>Sección de AJAX</h2>
+          <label for="url-input">URL:</label>
+          <input type="text" id="url-input" value="https://j0h4n4c0st4.github.io/practicaweb1/" disabled>
+          <button onclick="mostrarContenidos()">Mostrar Contenidos</button>
+      
+          <h3>Estados de la petición:</h3>
+          <p id="estado-peticion">No iniciada</p>
+      
+          <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
+          <pre id="cabeceras-http"></pre>
+      
+          <h3>Código de estado:</h3>
+          <pre id="codigo-estado"></pre>
+      
+          <h3>Contenidos:</h3>
+          <pre id="contenidos"></pre>
+        </div>
+    </details>
+  </ul2>
+  <p>
+
+  </p>
+</body>
+</html>
